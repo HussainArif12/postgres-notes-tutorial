@@ -7,9 +7,14 @@ const update = require("./routes/update");
 const del = require("./routes/del");
 const app = express();
 
+//configuring express
 app.set("view engine", "pug");
+
+//middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan("dev"));
+
+//routes
 app.use("/create", create);
 app.use("/read", read);
 app.use("/update", update);

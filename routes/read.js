@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const db = require("../config/database");
+
 router.get("/:id", async (req, res) => {
   const query = `
     SELECT * FROM Note
