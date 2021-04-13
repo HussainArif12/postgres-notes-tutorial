@@ -1,0 +1,19 @@
+doctype html 
+html
+
+    head
+        title Create Note
+
+    body 
+        form(action=`/create/` method="POST")
+            input(
+            type="text"
+            name="title"
+            )
+            textarea(
+            name="body"
+            )
+            
+            input(type="submit")
+        
+        a(href="/") Home
